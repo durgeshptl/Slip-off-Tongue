@@ -7,10 +7,24 @@ The system has been developed step-by-step, starting from a classical machine le
 
 ---
 
-## 🔁 Project Progress Overview
+## 🔁 Project Progress Overview  
+
+### 🌐Web Page
+![Page](screenshots/16.png)  
+
+![Labels](screenshots/17.png)   
+
+#### 🤫Result:  
+
+![Result](screenshots/19.png)
+
+---
 
 ### Phase 1: Classical Machine Learning (Baseline Model)
 The initial version of the project was built using traditional NLP and machine learning techniques.
+1. Logistic Regression + OvsR  
+2. Multinomial Naive Bayes Classifier
+
 
 **Approach:**
 - Text preprocessing:
@@ -31,6 +45,77 @@ The initial version of the project was built using traditional NLP and machine l
 - `identity_hate`
 
 This phase helped establish a complete end-to-end pipeline for toxic comment detection.
+
+---
+
+
+## 📸 Screenshots
+
+>Visual walkthrough to the training data
+
+### 📊Training Data Overview  
+#### Total Row and Colom:
+
+![Counts ROw-Colom](screenshots/1.png)   
+
+#### Labels:  
+
+![Labels](screenshots/3.png)   
+
+#### Train data:  
+
+![train data](screenshots/2.png)
+
+### 📈📉Visualization
+#### Label-Counts:  
+
+![Label-count](screenshots/4.png)   
+
+#### Comment-sizes:  
+
+![Comment-sizes](screenshots/5.png)   
+
+#### Correlation of features:  
+
+![Correlation of features](screenshots/6.png)  
+
+### 🔁Cloud View of data[Most common word]
+![Train data](screenshots/7.png)   
+
+#### 😳Toxic:  
+
+![Toxic](screenshots/8.png)   
+
+#### 😫Sevre-Toxic:  
+
+![Sevre_Toxic](screenshots/9.png)   
+
+#### 💀Obscene:  
+
+![Obscene](screenshots/10.png)   
+
+#### 😖Threat:  
+
+![Threat](screenshots/11.png)   
+
+#### 😠Insult:  
+
+![Insult](screenshots/12.png)   
+
+#### 👎Identity Hate:  
+
+![Identity_hate](screenshots/18.png)
+
+### 🧹🧹Comments after Data cleaning 
+![Label-count](screenshots/13.png)  
+ 
+### 🔎Classification Report  
+1. Logistic Regression + OvsR  
+![Label-count](screenshots/14.png)
+
+3. Multinomial Naive Bayes Classifier:
+![Comment-sizes](screenshots/15.png)   
+
 
 ---
 
