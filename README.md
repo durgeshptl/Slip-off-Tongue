@@ -47,6 +47,10 @@ The initial version of the project was built using traditional NLP and machine l
 This phase helped establish a complete end-to-end pipeline for toxic comment detection.
 
 ---
+### Dataset link  
+https://www.kaggle.com/datasets/julian3833/jigsaw-toxic-comment-classification-challenge?select=train.csv   
+---
+
 
 
 ## 📸 Screenshots
