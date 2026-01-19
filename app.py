@@ -16,7 +16,7 @@ stop = set(stopwords.words("english"))
 stemmer = nltk.stem.SnowballStemmer("english")
 
 LABELS = ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
-THRESHOLD = 50.0  # used for red/green in frontend
+THRESHOLD = 50.0  # used for red/green in frontend over result
 
 def remove_punctuation(text):
     return re.sub(r"[^\w\s]", "", text)
