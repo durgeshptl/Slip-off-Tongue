@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Toxic Comment Checker",
+  "description": "Analyzes selected text for toxicity using your ML model",
+  "version": "1.0",
+  "icons": {
+  "512": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Toxic Checker"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}

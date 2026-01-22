@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toxic Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Toxic Comment Checker</h1>
+
+    <div class="input-card">
+      <input id="commentInput" type="text" placeholder="Select text or type here..." />
+      <button id="analyzeBtn">Analyze</button>
+    </div>
+
+    <div class="action-row">
+      <button id="cleanBtn" class="mini-btn">Clean Example</button>
+      <button id="toxicBtn" class="mini-btn">Toxic Example</button>
+      <button id="clearBtn" class="mini-btn mini-danger">Clear</button>
+
+      <div class="loader" id="loader">
+        <span class="spinner"></span>
+        <span>Analyzing...</span>
+      </div>
+    </div>
+
+    <div class="overall-card">
+      <div>Overall Toxicity</div>
+      <span id="overallPct" class="overall-pill neutral">0%</span>
+      <span id="riskLabel" class="risk-pill neutral">—</span>
+    </div>
+
+    <div class="result-cards">
+      <div class="card">
+        <div class="emoji">😡</div>
+        <h2>Toxic</h2>
+        <span class="badge badge-neutral" data-badge="toxic">0%</span>
+        <div class="percent percent-green" data-percent="toxic">Low</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">😔</div>
+        <h2>Severe Toxic</h2>
+        <span class="badge badge-neutral" data-badge="severe_toxic">0%</span>
+        <div class="percent percent-green" data-percent="severe_toxic">Low</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🤬</div>
+        <h2>Obscene</h2>
+        <span class="badge badge-neutral" data-badge="obscene">0%</span>
+        <div class="percent percent-green" data-percent="obscene">Low</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">⚠️</div>
+        <h2>Threat</h2>
+        <span class="badge badge-neutral" data-badge="threat">0%</span>
+        <div class="percent percent-green" data-percent="threat">Low</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">👎</div>
+        <h2>Insult</h2>
+        <span class="badge badge-neutral" data-badge="insult">0%</span>
+        <div class="percent percent-green" data-percent="insult">Low</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🚫</div>
+        <h2>Identity Hate</h2>
+        <span class="badge badge-neutral" data-badge="identity_hate">0%</span>
+        <div class="percent percent-green" data-percent="identity_hate">Low</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
