@@ -1,0 +1,16 @@
+flask
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+nltk
+wordcloud
+flask_cors
+
+
+# ─── NEW lines for XLM-RoBERTa ───────────────────────────────
+torch>=2.0.0
+transformers>=4.30.0
+sentencepiece>=0.1.99
+safetensors>=0.3.0
