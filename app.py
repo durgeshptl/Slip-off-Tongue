@@ -54,7 +54,8 @@ def risk_label(overall_pct):
     return "Critical"
 
 # ─── NEW: Load XLM-RoBERTa from local folder ────────────────────
-MODEL_PATH = "newmod"
+# ─── Load XLM-RoBERTa from Hugging Face Hub ───────────────────────────────
+HF_REPO = "durgeshptl/toxic-xlmr-v3"  # your repo
 
 model_new = None
 tokenizer_new = None
@@ -62,44 +63,31 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 try:
     print("\n" + "="*70)
-    print("DEBUG: Loading XLM-RoBERTa from local folder")
-    print("Current dir:", os.getcwd())
-    print("Model path:", MODEL_PATH)
-    print("Full path:", os.path.abspath(MODEL_PATH))
-    print("Exists?", os.path.exists(MODEL_PATH))
-    print("Is dir?", os.path.isdir(MODEL_PATH))
-    
-    if os.path.isdir(MODEL_PATH):
-        print("Files:", sorted(os.listdir(MODEL_PATH)))
-    
+    print("Loading XLM-RoBERTa from Hugging Face:", HF_REPO)
+
     tokenizer_new = AutoTokenizer.from_pretrained(
-        MODEL_PATH,
-        local_files_only=True,
-        use_fast=True,
-        fix_mistral_regex=True
+        HF_REPO,
+        use_fast=True
     )
-    
+
     model_new = AutoModelForSequenceClassification.from_pretrained(
-        MODEL_PATH,
-        problem_type="multi_label_classification",
-        local_files_only=True,
-        trust_remote_code=False
+        HF_REPO,
+        problem_type="multi_label_classification"
     )
-    
+
     model_new.to(device)
     model_new.eval()
-    
-    print("SUCCESS: Model & tokenizer loaded on", device.type)
-    print("="*70 + "\n")
-    
-except Exception as e:
-    print("\n" + "="*70)
-    print("WARNING: Failed to load XLM-RoBERTa")
-    print("Error:", str(e))
-    traceback.print_exc()
-    print("Old model still works")
+
+    print("SUCCESS: Loaded from Hugging Face on", device.type)
     print("="*70 + "\n")
 
+except Exception as e:
+    print("\n" + "="*70)
+    print("WARNING: Failed to load XLM-RoBERTa from Hugging Face")
+    print("Error:", str(e))
+    traceback.print_exc()
+    print("Old TF-IDF model still works")
+    print("="*70 + "\n")
 # ─── PREPROCESSING ──────────────────────────────────────────────
 # Old
 def preprocess_old(comment):
