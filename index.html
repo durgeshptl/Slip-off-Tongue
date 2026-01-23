@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Slip-off-Tongue | Toxic Comment Detection</title>
 
-  <!-- Instant redirect -->
-  <meta http-equiv="refresh" content="2; url=https://slip-off-tongue.onrender.com">
+  <!-- GitHub Pages safe redirect -->
+  <meta http-equiv="refresh" content="1; url=https://slip-off-tongue.onrender.com" />
 
   <style>
     body {
@@ -19,21 +21,25 @@
       font-family: Arial, Helvetica, sans-serif;
       text-align: center;
     }
+
     .card {
       background: #020617;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
       max-width: 420px;
     }
+
     h1 {
       margin-bottom: 10px;
       color: #38bdf8;
     }
+
     p {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       color: #cbd5f5;
     }
+
     a {
       display: inline-block;
       padding: 12px 22px;
@@ -43,16 +49,17 @@
       border-radius: 6px;
       font-weight: bold;
     }
+
     a:hover {
       background: #0ea5e9;
     }
   </style>
 
   <script>
-    // JS fallback redirect
-    setTimeout(() => {
-      window.location.href = "https://slip-off-tongue.onrender.com";
-    }, 2000);
+    // JavaScript fallback redirect (GitHub Pages compatible)
+    setTimeout(function () {
+      window.location.replace("https://slip-off-tongue.onrender.com");
+    }, 1000);
   </script>
 </head>
 
