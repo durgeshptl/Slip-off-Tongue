@@ -7,7 +7,7 @@ scikit-learn
 nltk
 wordcloud
 flask_cors
-
+gunicorn
 
 # ─── NEW lines for XLM-RoBERTa ───────────────────────────────
 torch>=2.0.0
