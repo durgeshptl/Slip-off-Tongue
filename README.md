@@ -157,21 +157,5 @@ To improve model performance and make the system **future-ready**, the project h
 
 ---
 
-## 💾 Model Storage
-Unlike classical models that rely on pickle files, the Transformer model is saved using the Hugging Face format:
-- Model weights
-- Configuration
-- Tokenizer files
 
-This makes the model easier to reuse, extend, and integrate into production systems.
-
----
-
-## 🔮 Future Scope
-The current architecture allows seamless extension to:
-- Hindi language data
-- Code-mixed (Hindi + English) comments
-- Larger multilingual moderation systems
-
-These enhancements are planned for later phases without changing the overall system design.
 
