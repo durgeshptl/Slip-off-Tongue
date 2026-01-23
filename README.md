@@ -22,3 +22,23 @@ To improve model performance and make the system **future-ready**, the project h
 
 
 ---
+### MODEL TRAINING
+
+![part1](snippets/2.png)
+
+### MODEL SCORE
+![part2](snippets/1.png)
+
+### LOCAL RUN
+![LOCAL SERVER](snippets/3.png)
+
+### TOGGLE TO JUMP OLD
+![TOGGEL SET](snippets/4.png)
+
+### EXTENSION ON NEW MODEL
+![EXT](snippets/5.png)
+
+
+
+
+
