@@ -14,4 +14,12 @@ The system has been developed step-by-step, starting from a classical machine le
 https://slip-off-tongue.onrender.com/  
 ---
 
+### EXTENSION
+![NORMAL](1.png)  
+
+#### 🤫Result:  
+
+![ANALYSED](2.png)   
+
+
 
