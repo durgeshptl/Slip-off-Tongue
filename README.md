@@ -10,11 +10,17 @@ This project is an **AI-based Toxic Comment Classification system** that detects
 The system has been developed step-by-step, starting from a classical machine learning approach and then upgraded to a **modern Transformer-based architecture** for better scalability and future multilingual support.
 
 ---
-## Deployment Link  
+### REST API  
 https://slip-off-tongue.onrender.com/  
 ---
 
 ### EXTENSION
+### LOGO:  
+
+![logo](extension/icon128.png)
+
+### NORMAL STATE
+
 ![NORMAL](1.png)  
 
 #### 🤫Result:  
