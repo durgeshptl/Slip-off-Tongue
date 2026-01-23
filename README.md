@@ -36,6 +36,7 @@ To improve model performance and make the system **future-ready**, the project h
 ![TOGGEL SET](snippets/4.png)
 
 ### EXTENSION ON NEW MODEL
+![logo](toxic-checker/icon128.png)
 ![EXT](snippets/5.png)
 
 
