@@ -1,7 +1,7 @@
 // Default to new model
 let useNewModel = true;
 
-const API_BASE = "https://slip-off-tongue.onrender.com";
+const API_BASE = "http://127.0.0.1:5001";
 
 function fillExample(type) {
   const input = document.getElementById("commentInput");
